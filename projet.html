@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projets — Maxence</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="apropos.html" class="nav-link">À propos</a></li>
+        <li><a href="competences.html" class="nav-link">Compétences</a></li>
+        <li><a href="experience.html" class="nav-link">Expérience</a></li>
+        <li><a href="projet.html" class="nav-link" style="color: var(--text-primary)">Projets</a></li>
+        <li><a href="veille.html" class="nav-link">Veille</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+      <a href="https://github.com/Maxence71m" target="_blank" class="social-link" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+    <main>
+      <div class="hero-content">
+        <div class="hero-text" style="width: 100%; max-width: 1100px;">
+          
+          <h1 class="hero-title">Mes Projets</h1>
+          <p class="hero-description">
+            Découvrez les applications, sites web et développements que j'ai réalisés durant ma formation et mes expériences pro.
+          </p>
+
+          <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                    <h3>Application de Gestion</h3>
+                    <p class="project-desc">
+                        Développement d'une application interne pour la gestion des devis et des clients lors de mon stage.
+                    </p>
+                </div>
+                <a href="projets/devis.html" class="btn-project">Voir le détail →</a>
+            </div>
+
+            <div class="project-card empty-card">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag" style="background: transparent; border: 1px dashed #666;">À venir</span>
+                    </div>
+                    <h3>Prochain Projet...</h3>
+                    <p class="project-desc" style="color: #666;">
+                        Espace réservé pour mon prochain développement ou projet de 2ème année.
+                    </p>
+                </div>
+                <a href="#" class="btn-project disabled">Bientôt disponible</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="background">
+        <div class="gradient-blur gradient-1"></div>
+        <div class="gradient-blur gradient-2"></div>
+      </div>
+    </main>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
