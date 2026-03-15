@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JobPilot — Plateforme de recrutement</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Accueil</a></li>
+        <li><a href="../apropos.html" class="nav-link">À propos</a></li>
+        <li><a href="../competences.html" class="nav-link">Compétences</a></li>
+        <li><a href="../experience.html" class="nav-link">Expérience</a></li>
+        <li><a href="../projet.html" class="nav-link" style="color: var(--text-primary)">Projets</a></li>
+        <li><a href="../veille.html" class="nav-link">Veille</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://github.com/Maxence71m" target="_blank" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+   <main>
+      <div class="hero-content">
+        <div class="hero-text" style="width: 100%; max-width: 900px;">
+          
+          <div style="width: 100%; margin-bottom: 20px;">
+              <a href="../projet.html" style="color: #aaa; text-decoration: none; display: inline-block; padding: 5px 10px; border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; background: rgba(0,0,0,0.3);">
+                ← Retour aux projets
+              </a>
+          </div>
+
+          <h1 class="hero-title" style="font-size: 3rem; margin-top: 0; margin-bottom: 20px;">JobPilot — Plateforme de recrutement</h1>
+            
+          <div class="project-tags" style="margin-bottom: 30px;">
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">Laravel</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">PHP</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">MySQL</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">API REST</span>
+          </div>
+
+          <div class="contact-card" style="text-align: left; padding: 40px;">
+                  
+            <h3 style="color: #fff; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                💼 Contexte & Objectifs
+            </h3>
+            <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
+                <strong>JobPilot</strong> est une plateforme web de gestion d'offres d'emploi développée dans le cadre de ma formation en BTS SIO option SLAM.
+                <br><br>
+                L'objectif du projet était de créer une application permettant aux <strong>entreprises de publier des offres d'emploi</strong> et aux <strong>candidats de postuler directement en ligne</strong>.
+                <br><br>
+                Le projet inclut également un système d'administration permettant de gérer les utilisateurs et leurs rôles.
+            </p>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                ⚙️ Fonctionnalités développées
+            </h3>
+
+            <ul style="color: #ccc; line-height: 1.6; margin-bottom: 30px; padding-left: 20px;">
+                <li>Création et gestion des offres d'emploi (CRUD complet).</li>
+                <li>Gestion des candidats et des entreprises.</li>
+                <li>Système d'authentification sécurisé avec Laravel.</li>
+                <li>Gestion des rôles : <strong>admin, entreprise et candidat</strong>.</li>
+                <li>Possibilité pour les candidats de postuler à une offre.</li>
+                <li>Interface d'administration pour gérer les utilisateurs.</li>
+                <li>Création d'une API REST sécurisée pour accéder aux données.</li>
+                <li>Mise en place de logs d'audit pour suivre les actions importantes.</li>
+            </ul>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                🚀 Difficultés et Solutions
+            </h3>
+
+            <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
+                <strong>Le problème :</strong> La gestion des rôles utilisateurs et des permissions nécessitait de sécuriser correctement les routes et les actions disponibles selon le type d'utilisateur.
+                <br><br>
+                <strong>Ma solution :</strong> J'ai implémenté un système de rôles dans la base de données et utilisé des middlewares Laravel pour limiter l'accès aux fonctionnalités sensibles (administration, modification d'offres, etc.).
+                <br><br>
+                J'ai également mis en place des <strong>Observers et des logs d'audit</strong> afin de tracer les actions importantes comme la création, la modification ou la suppression d'offres.
+            </p>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 40px;">
+                📸 Démonstration & Code Source
+            </h3>
+
+            <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
+                  
+                <p style="color: #ccc; margin-bottom: 25px;">
+                    Retrouvez ci-dessous le code source complet du projet JobPilot.
+                </p>
+                  
+                <a href="https://github.com/Maxence71m/JobPilot" target="_blank" class="btn-project" style="background: #333; color: white; border: none; margin: 10px; display: inline-block;">
+                    💻 Voir le code sur GitHub
+                </a>
+                  
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <div class="background">
+      <div class="gradient-blur gradient-1"></div>
+      <div class="gradient-blur gradient-2"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="../script.js"></script>
+
+  </body>
+</html>
