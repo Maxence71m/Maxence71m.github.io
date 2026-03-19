@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forum de discussion — Maxence</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Accueil</a></li>
+        <li><a href="../apropos.html" class="nav-link">À propos</a></li>
+        <li><a href="../competences.html" class="nav-link">Compétences</a></li>
+        <li><a href="../experience.html" class="nav-link">Expérience</a></li>
+        <li><a href="../projet.html" class="nav-link" style="color: var(--text-primary)">Projets</a></li>
+        <li><a href="../veille.html" class="nav-link">Veille</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://github.com/Maxence71m" target="_blank" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero-content">
+        <div class="hero-text" style="width: 100%; max-width: 900px;">
+          
+          <div style="width: 100%; margin-bottom: 20px;">
+              <a href="../projet.html" style="color: #aaa; text-decoration: none; display: inline-block; padding: 5px 10px; border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; background: rgba(0,0,0,0.3);">
+                ← Retour aux projets
+              </a>
+          </div>
+
+          <h1 class="hero-title" style="font-size: 3rem; margin-top: 0; margin-bottom: 20px;">Forum de discussion</h1>
+            
+          <div class="project-tags" style="margin-bottom: 30px;">
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">PHP Natif</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">MySQL</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">HTML/CSS</span>
+          </div>
+
+          <div class="contact-card" style="text-align: left; padding: 40px;">
+                  
+            <h3 style="color: #fff; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                💬 Contexte du projet
+            </h3>
+            <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
+                Réalisé lors de ma première année de formation, ce projet consistait à créer un forum de discussion web interactif de bout en bout. 
+                De la modélisation de la base de données jusqu'à l'interface utilisateur, l'objectif était de maîtriser les opérations fondamentales (CRUD), 
+                la gestion des sessions et l'authentification sécurisée des membres.
+            </p>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                ⚙️ Fonctionnalités développées
+            </h3>
+
+            <ul style="color: #ccc; line-height: 1.6; margin-bottom: 30px; padding-left: 20px;">
+                <li><strong>Conception :</strong> Création de la charte graphique, des maquettes et de la structure de la base de données.</li>
+                <li><strong>Espace Public :</strong> Affichage dynamique des catégories, rubriques, articles et d'un module de statistiques (nombre de membres, total des messages).</li>
+                <li><strong>Espace Membre :</strong> Inscription, connexion, personnalisation (avatar et couleur de nom), et possibilité de publier des articles et de répondre aux sujets.</li>
+                <li><strong>Administration :</strong> Panel dédié pour gérer les rubriques (ajout, modification, suppression) et promouvoir ou supprimer des utilisateurs.</li>
+                <li><strong>Modération :</strong> Système permettant de supprimer les articles ou les commentaires non appropriés.</li>
+            </ul>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                🚀 Les défis techniques
+            </h3>
+
+            <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
+                <strong>Le problème :</strong> Gérer l'affichage conditionnel des éléments selon l'état de l'utilisateur (visiteur, membre connecté, ou administrateur) et sécuriser les requêtes vers la base de données.
+                <br><br>
+                <strong>Ma solution :</strong> L'utilisation approfondie des superglobales <code>$_SESSION</code> en PHP pour maintenir l'état de connexion. J'ai également dû structurer mes requêtes SQL pour récupérer correctement les relations entre les tables (Un utilisateur -> Des articles -> Des commentaires) afin d'afficher des données dynamiques comme "la date du dernier message".
+            </p>
+
+            <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 40px;">
+                📸 Code Source
+            </h3>
+
+            <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
+                  
+                <p style="color: #ccc; margin-bottom: 25px;">
+                    Retrouvez l'intégralité du code source (scripts PHP et exports de la base de données) sur mon dépôt GitHub.
+                </p>
+                  
+                <a href="https://github.com/Maxence71m/Forum" target="_blank" class="btn-project" style="background: #333; color: white; border: none; margin: 10px; display: inline-block;">
+                    💻 Voir le code sur GitHub
+                </a>
+                  
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <div class="background">
+      <div class="gradient-blur gradient-1"></div>
+      <div class="gradient-blur gradient-2"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="../script.js"></script>
+
+  </body>
+</html>
