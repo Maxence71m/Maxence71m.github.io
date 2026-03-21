@@ -837,6 +837,29 @@ main {
 
 .btn-read:hover { background: #fff; color: #000; }
 
+.article-card.danger { 
+    border-color: rgba(220, 38, 38, 0.3);
+    box-shadow: inset 0 0 15px rgba(220, 38, 38, 0.05); /* Lueur rouge très discrète à l'intérieur */
+}
+/* Ajoute une classe .projection dans ton HTML sur le div correspondant */
+.projection {
+    color: #44ff88; /* Un vert émeraude discret */
+    font-weight: 500;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 1px dashed rgba(68, 255, 136, 0.3);
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 12px; /* Un peu plus d'air */
+    border-radius: 20px; /* Plus arrondi pour le côté moderne */
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 /* --------------------------------------------------------------------- */
 /* --- PAGE CONTACT --- */
 

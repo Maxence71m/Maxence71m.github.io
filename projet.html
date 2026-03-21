@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projets — Maxence</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <nav class="navbar">
@@ -30,71 +31,74 @@
       <div class="hero-content">
         <div class="hero-text" style="width: 100%; max-width: 1100px;">
           
-          <h1 class="hero-title">Mes Projets</h1>
-          <p class="hero-description">
-            Découvrez les applications, sites web et développements que j'ai réalisés durant ma formation et mes expériences pro.
+          <h1 class="hero-title"><i class="fa-solid fa-code-branch" style="margin-right: 15px; color: #fff;"></i>Mes Projets</h1>
+          <p class="hero-description" style="font-size: 1.2rem; opacity: 0.9;">
+            Réalisations techniques développées en environnement académique (BTS SIO SLAM) et professionnel (Stage). Focus sur l'architecture, la gestion de bases de données et la sécurité.
           </p>
 
-          <div class="projects-grid">
+          <div class="projects-grid" style="margin-top: 50px;">
+
+            <div class="project-card" style="border-top: 2px solid #fff;">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">💼 Stage</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP 8</span>
+                    </div>
+                    <h3 style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-file-invoice-dollar" style="color: #fff;"></i> Application de Gestion Métier</h3>
+                    <p class="project-desc">
+                        Développement d'un outil interne sur-mesure pour automatiser la création de devis et le suivi client. 
+                        <strong>Objectif technique :</strong> Génération de PDF et modélisation de base de données.
+                    </p>
+                </div>
+                <a href="projets/devis.html" class="btn-project" style="background: #fff; color: #000; border: none; font-weight: bold;">Analyser le projet →</a>
+            </div>
 
             <div class="project-card">
                 <div class="project-content">
                     <div class="project-tags">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">PHP</span>
+                        <span class="tag">🎓 Académique</span>
+                        <span class="tag">API REST</span>
+                        <span class="tag">Logs d'audit</span>
                     </div>
-                    <h3>Application de Gestion</h3>
+                    <h3 style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-rocket" style="color: #fff;"></i> JobPilot — Recrutement</h3>
                     <p class="project-desc">
-                        Développement d'une application interne pour la gestion des devis et des clients lors de mon stage.
+                        Plateforme complexe de mise en relation. Gestion des rôles, architecture MVC sous Laravel et sécurisation des accès.
                     </p>
                 </div>
-                <a href="projets/devis.html" class="btn-project">Voir le détail →</a>
+                <a href="projets/jobpilot.html" class="btn-project">Voir l'architecture →</a>
             </div>
 
-           <div class="project-card">
+            <div class="project-card">
                 <div class="project-content">
                     <div class="project-tags">
-                        <span class="tag">C#</span>
+                        <span class="tag">C# .NET</span>
                         <span class="tag">WPF</span>
                         <span class="tag">POO</span>
                     </div>
-                    <h3>App d'Apprentissage Géométrie</h3>
+                    <h3 style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-shapes" style="color: #fff;"></i> App Éducative Géométrie</h3>
                     <p class="project-desc">
-                        Logiciel éducatif de bureau conçu pour des enfants de CM1/CM2 afin d'apprendre à calculer les périmètres et surfaces.
+                        Logiciel bureau destiné aux classes de CM1/CM2. Implémentation de la Programmation Orientée Objet pour les calculs géométriques complexes.
                     </p>
                 </div>
-                <a href="projets/geometrie.html" class="btn-project">Voir le détail →</a>
+                <a href="projets/geometrie.html" class="btn-project">Détails techniques →</a>
             </div>
+
             <div class="project-card">
                 <div class="project-content">
                     <div class="project-tags">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">API</span>
-                    </div>
-                    <h3>JobPilot — Plateforme de recrutement</h3>
-                    <p class="project-desc">
-                        Développement d'une plateforme web de gestion d'offres d'emploi permettant aux entreprises de publier des offres et aux candidats de postuler. 
-                        Le projet inclut un système d'authentification, une gestion des rôles (admin, entreprise, candidat), des logs d'audit et une API REST.
-                    </p>
-                </div>
-                <a href="projets/jobpilot.html" class="btn-project">Voir le détail →</a>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
+                        <span class="tag">PHP Natif</span>
                         <span class="tag">CRUD</span>
+                        <span class="tag">Sécurité SQL</span>
                     </div>
-                    <h3>Forum de discussion</h3>
+                    <h3 style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-comments" style="color: #fff;"></i> Forum de discussion</h3>
                     <p class="project-desc">
-                        Développement complet d'un forum : conception de la base de données, espaces membres, authentification et panel d'administration.
+                        Développement complet d'un forum. Conception de la base de données et apprentissage des bases de la sécurité (protection contre les injections).
                     </p>
                 </div>
-                <a href="projets/forum.html" class="btn-project">Voir le détail →</a>
-            </div>     
+                <a href="projets/forum.html" class="btn-project">Voir le CRUD →</a>
+            </div>     
+
           </div>
         </div>
       </div>

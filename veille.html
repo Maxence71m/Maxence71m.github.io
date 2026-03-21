@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Veille — Maxence</title>
+    <title>Veille Technologique — Maxence</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <nav class="navbar">
@@ -14,75 +15,82 @@
         <li><a href="competences.html" class="nav-link">Compétences</a></li>
         <li><a href="experience.html" class="nav-link">Expérience</a></li>
         <li><a href="projet.html" class="nav-link">Projets</a></li>
-        <li>
-          <a href="veille.html" class="nav-link" style="color: var(--text-primary)">Veille</a>
-        </li>
+        <li><a href="veille.html" class="nav-link" style="color: var(--text-primary)">Veille</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-      
    <div class="nav-socials">
       <a href="https://github.com/Maxence71m" target="_blank" class="social-link" aria-label="GitHub">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
       </a>
     </div>
   </nav>
 
     <main>
       <div class="hero-content">
-        <div class="hero-text" style="width: 100%; max-width: 1100px;">
+        <div class="hero-text" style="width: 100%; max-width: 1200px;">
           
-          <h1 class="hero-title">Veille Technologique</h1>
+          <h1 class="hero-title"><i class="fa-solid fa-eye" style="margin-right: 15px; color: #fff;"></i>Veille Technologique</h1>
 
-          <div class="veille-intro-container">
-            
-            <div class="intro-box">
-                <h3>📌 La veille, c'est quoi ?</h3>
-                <p>
-                    C'est surveiller les innovations pour anticiper les changements. Je collecte et analyse l'information pour comprendre les nouvelles menaces et opportunités techniques.
-                </p>
-            </div>
-
-            <div class="intro-box highlight">
-                <h3>🎯 Mon Sujet</h3>
-                <p>
-                    <strong>« Les impacts de l'Intelligence Artificielle sur le web et la Cybersécurité »</strong>.
+          <div class="veille-intro-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px;">
+            <div class="intro-box highlight" style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); grid-column: 1 / -1;">
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i class="fa-solid fa-brain" style="color: #4488ff;"></i> Mon Sujet d'Étude</h3>
+                <p style="font-size: 1.2rem; line-height: 1.6; opacity: 0.9;">
+                    <strong>« Les impacts de l'Intelligence Artificielle sur le Web et la Cybersécurité »</strong>.
                     <br><br>
-                    L'IA générative transforme le développement (nouveaux outils), mais crée de nouveaux risques (Deepfakes, Phishing) que je dois surveiller.
+                    L'IA générative transforme le développement web (outils, automatisation) tout en créant de nouveaux risques majeurs (Deepfakes, Phishing ciblé, vol de propriété intellectuelle) que je dois surveiller activement pour mon futur métier de développeur.
                 </p>
             </div>
-
-            <div class="intro-box">
-                <h3>🛠 Mes Outils</h3>
-                <p>
-                    <strong>Feedly (RSS) :</strong> Pour centraliser mes sources et les trier dans mes tableaux (Boards).
-                    <br>
-                    <strong>Twitter (X) :</strong> Pour l'actualité immédiate.
-                </p>
-            </div>
-
           </div>
 
-          <h2 class="section-title">Actualités Récentes</h2>
+          <h2 class="section-title" style="margin-bottom: 30px;"><i class="fa-solid fa-gears" style="margin-right: 10px; color: #aaa;"></i> Ma Méthodologie</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 50px;">
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.03);">
+              <i class="fa-solid fa-rss" style="font-size: 2rem; color: #ff8844; margin-bottom: 15px;"></i>
+              <h4>1. Collecte (Feedly)</h4>
+              <p style="opacity: 0.7; font-size: 0.9rem;">Agrégation automatisée de flux RSS de sources de référence (TechCrunch, The Verge, L'Usine Digitale, Le Monde Informatique).</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.03);">
+              <i class="fa-solid fa-notes-medical" style="font-size: 2rem; color: #44ff88; margin-bottom: 15px;"></i>
+              <h4>2. Analyse & Stockage</h4>
+              <p style="opacity: 0.7; font-size: 0.9rem;">Utilisation de l'extension Notion Web Clipper pour capturer l'info et l'analyser directement dans mon tableau de bord.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.03);">
+              <i class="fa-solid fa-share-nodes" style="font-size: 2rem; color: #4488ff; margin-bottom: 15px;"></i>
+              <h4>3. Synthèse Dynamique</h4>
+              <p style="opacity: 0.7; font-size: 0.9rem;">Publication d'une version publique de ma base de données Notion, mise à jour automatiquement pour le jury.</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin: 60px 0; padding: 40px; border: 1px solid rgba(68,136,255,0.3); border-radius: 20px; background: rgba(68,136,255,0.03); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <h2 style="margin-bottom: 20px;"><i class="fa-solid fa-database" style="color: #4488ff; margin-right: 15px;"></i> Base de données complète</h2>
+            <p style="margin-bottom: 30px; opacity: 0.8; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">Pour le BTS, j'ai centralisé l'intégralité de ma veille, de mes analyses et de mes projections techniques sur un tableau de bord Notion interactif et mis à jour en continu.</p>
+            <a href="https://vaulted-algebra-448.notion.site/3288a37a972e80d38260e1909650decc?v=3288a37a972e80d6bc5a000c615080c8" target="_blank" class="btn-read" style="padding: 18px 50px; font-size: 1.2rem; background: #fff; color: #000; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(255,255,255,0.1);">
+                <i class="fa-solid fa-external-link-alt" style="font-size: 1rem;"></i> Consulter ma veille sur Notion
+            </a>
+          </div>
+
+          <h2 class="section-title"><i class="fa-solid fa-star" style="margin-right: 10px; color: #ffcc00;"></i> Sélection de synthèse (3 articles)</h2>
           
           <div class="articles-grid">
 
             <div class="article-card danger">
                 <div class="card-meta">
                     <span class="date">26 Février 2026</span>
-                    <span class="tag">Cybersécurité</span>
+                    <span class="tag">Attaque / API</span>
                 </div>
-                <h3>Distillation illicite : Anthropic accuse des laboratoires d'IA</h3>
+                <h3>Siphonnage d'IA : Anthropic accuse des laboratoires</h3>
                 <p class="source">Source : TechCrunch (via Feedly)</p>
                 <p>
-                    Anthropic accuse trois entreprises d'IA (DeepSeek, Moonshot AI et MiniMax) d'avoir créé des milliers de faux comptes pour "siphonner" les capacités de codage et de raisonnement de son modèle Claude via une technique de "distillation".
+                    Anthropic accuse trois entreprises d'IA d'avoir créé des milliers de faux comptes pour "siphonner" les capacités de codage et de raisonnement de son modèle Claude via une technique de "distillation".
                 </p>
-                <div class="avis">
-                    <strong>Mon analyse :</strong> La cybersécurité de l'IA ne concerne pas que les utilisateurs, mais aussi les créateurs. Le vol de propriété intellectuelle par détournement d'API devient une menace majeure dans le développement web lié à l'IA.
+                <div class="avis" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                    <strong>Mon analyse (celle que tu aimais) :</strong> Je trouve cela inquiétant pour la propriété intellectuelle, car cela montre que même les API sécurisées peuvent être détournées pour cloner des technologies propriétaires. Cela pose un vrai problème de cybersécurité technique.
+                </div>
+                <div class="avis" style="color: #44ff88;">
+                    <strong>Projection Technique (SLAM) :</strong> Pour mes développements, cela confirme la nécessité d'implémenter des limites de requêtes (Rate Limiting) et de la détection d'bots pour protéger l'accès à mes API.
                 </div>
                 <a href="https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/" target="_blank" class="btn-read">
-                    Lire l'article complet →
+                    Lire l'article original →
                 </a>
             </div>
 
@@ -94,31 +102,37 @@
                 <h3>Apple & Google Gemini : L'alliance historique</h3>
                 <p class="source">Source : 9to5Mac (via Feedly)</p>
                 <p>
-                    C'est officiel : Apple s'associe à Google pour intégrer les modèles <strong>Gemini</strong> dans la prochaine génération de Siri. Ce partenariat marque un tournant, Apple choisissant une technologie concurrente plutôt que de tout développer en interne.
+                    Apple s'associe à Google pour intégrer les modèles <strong>Gemini</strong> dans Siri. C'est un tournant, Apple choisissant une technologie concurrente plutôt que de tout développer en interne.
                 </p>
-                <div class="avis">
-                    <strong>Mon analyse :</strong> Même un géant comme Apple s'appuie sur des API tierces. Cela confirme que l'avenir du développement ne consiste pas à tout recréer ("réinventer la roue"), mais à savoir intégrer intelligemment les services IA existants.
+                <div class="avis" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                    <strong>Mon analyse (celle que tu aimais) :</strong> Même un géant comme Apple doit s'appuyer sur des tiers pour rester compétitif sur l'IA générative. Je trouve que c'est l'aveu qu'ils ne peuvent pas tout faire tout seul.
+                </div>
+                <div class="avis" style="color: #44ff88;">
+                    <strong>Projection Technique (SLAM) :</strong> Cela prouve que le métier de développeur web va de plus en plus consister à maîtriser l'intégration d'API tierces plutôt qu'à recréer des solutions lourdes en interne.
                 </div>
                 <a href="https://9to5mac.com/2026/01/12/apples-new-google-gemini-deal-sounds-bigger-better-than-expected/" target="_blank" class="btn-read">
-                    Lire l'article complet →
+                    Lire l'article original →
                 </a>
             </div>
 
             <div class="article-card danger">
                 <div class="card-meta">
                     <span class="date">4 Janvier 2026</span>
-                    <span class="tag">Danger IA</span>
+                    <span class="tag">Éthique / Cyber</span>
                 </div>
                 <h3>Grok (xAI) : La polémique des deepfakes</h3>
                 <p class="source">Source : The Verge (via Feedly)</p>
                 <p>
-                    L'IA de Twitter (Grok) a lancé une fonction d'édition d'image sans sécurité suffisante. Résultat : une vague de deepfakes indécents générés sans le consentement des personnes (y compris des mineurs).
+                    L'IA de Twitter (Grok) a lancé une fonction d'édition d'image sans sécurité suffisante. Résultat : une vague de deepfakes indécents générés sans le consentement des personnes.
                 </p>
-                <div class="avis">
-                    <strong>Mon analyse :</strong> Cet incident prouve qu'on ne peut pas déployer une technologie puissante sans "garde-fous". La sécurité et l'éthique doivent passer avant la sortie d'une fonctionnalité.
+                <div class="avis" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                    <strong>Mon analyse (celle que tu aimais) :</strong> Je trouve cela très inquiétant, car l'IA peut créer des contenus nuisibles trop facilement. Cela prouve que la sécurité et l'éthique doivent être au cœur du développement avant la sortie.
+                </div>
+                <div class="avis" style="color: #44ff88;">
+                    <strong>Projection Technique (SLAM) :</strong> En tant que dev, il est impératif d'intégrer des "guardrails" (filtres de sécurité) dès la conception de n'importe quel service web utilisant l'IA.
                 </div>
                 <a href="https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors" target="_blank" class="btn-read">
-                    Lire l'article complet →
+                    Lire l'article original →
                 </a>
             </div>
 
