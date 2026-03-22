@@ -1132,3 +1132,32 @@ main {
     z-index: 20;
 }
 
+/* --- CORRECTION NAVBAR SUR MOBILE --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+        flex-direction: column; /* Place le menu et l'icône GitHub l'un sous l'autre */
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        overflow-x: auto; /* Active le défilement horizontal avec le doigt */
+        -webkit-overflow-scrolling: touch; /* Défilement ultra fluide sur iPhone */
+        scrollbar-width: none; /* Cache la barre de scroll (Firefox) */
+        gap: 15px;
+        padding-bottom: 5px;
+    }
+
+    /* Cache la vilaine barre de scroll sur Chrome/Safari/Edge */
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links li {
+        flex-shrink: 0; /* Empêche le texte des liens de s'écraser sur plusieurs lignes */
+    }
+}
