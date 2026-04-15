@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Application Gestion Devis — Maxence</title>
+    <title>CRM Métier sur mesure — Art & Sièges</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -28,63 +28,71 @@
             </a>
           </div>
 
-          <h1 class="hero-title" style="font-size: 3rem;">Application de Gestion de Devis</h1>
+          <h1 class="hero-title" style="font-size: 3rem;">CRM Métier sur mesure</h1>
           
           <div class="project-tags" style="margin-bottom: 30px;">
               <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">PHP / Laravel</span>
-              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">MySQL</span>
-              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">Bootstrap</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">JS (Temps réel)</span>
+              <span class="tag" style="background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px;">Railway</span>
           </div>
 
           <div class="contact-card" style="text-align: left; padding: 40px;">
               
               <h3 style="color: #fff; margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
-                 🏢 Contexte & Objectifs
+                 🏢 Contexte & Enjeux
               </h3>
               <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
-                  Ce projet a été réalisé lors de mon stage de première année chez <strong>Art & Sièges</strong>. L'entreprise utilisait des fichiers Excel partagés pour créer ses devis, ce qui entraînait des erreurs de calcul et des pertes de données.
+                  Ce projet a été réalisé pour l'entreprise <strong>Art & Sièges</strong>. L'entreprise utilisait des brouillons papier et des fichiers Excel, ce qui provoquait des erreurs de calcul.
                   <br><br>
-                  <strong>Mon objectif :</strong> Développer une application web centralisée permettant aux commerciaux de créer, modifier et exporter des devis en PDF en quelques clics.
+                  <strong>Mon objectif :</strong> Développer un <strong>CRM métier sur mesure</strong> pour centraliser les clients, automatiser les calculs de prix complexes et suivre l'état des devis (En attente, Validé, Payé).
               </p>
 
               <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
                  ⚙️ Mes missions réalisées
               </h3>
               <ul style="color: #ccc; line-height: 1.6; margin-bottom: 30px; padding-left: 20px;">
-                  <li>Création du Modèle Conceptuel de Données (MCD) pour lier les Clients, les Produits et les Devis.</li>
-                  <li>Mise en place de la base de données <strong>MySQL</strong>.</li>
-                  <li>Développement du backend en <strong>PHP orienté objet / Laravel</strong>.</li>
-                  <li>Création d'un système de connexion sécurisé (Authentification) pour que seuls les employés y accèdent.</li>
-                  <li>Intégration d'une bibliothèque pour générer automatiquement les devis au format PDF.</li>
+                  <li><strong>Analyse :</strong> Étude des besoins de l'artisan pour traduire ses calculs papier en code.</li>
+                  <li><strong>Base de données :</strong> Création du schéma SQL pour lier les Clients et les Devis.</li>
+                  <li><strong>Backend :</strong> Développement de la logique avec <strong>Laravel</strong>.</li>
+                  <li><strong>Dynamisme :</strong> Création d'un calculateur en <strong>JavaScript</strong> pour afficher les prix en direct.</li>
+                  <li><strong>Documents :</strong> Mise en place de la génération automatique de devis en <strong>PDF</strong>.</li>
+                  <li><strong>Déploiement :</strong> Mise en ligne de l'application sur la plateforme <strong>Railway</strong>.</li>
               </ul>
 
               <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
                  🚀 Difficultés et Solutions
               </h3>
               <p style="color: #ccc; line-height: 1.6; margin-bottom: 30px;">
-                  <strong>Le problème :</strong> La génération du PDF prenait beaucoup de temps et l'affichage des tableaux de produits était souvent cassé sur la facture finale.<br>
-                  <strong>Ma solution :</strong> J'ai dû optimiser mon code HTML/CSS spécifiquement pour la librairie de génération PDF (DomPDF) et revoir mes requêtes SQL pour éviter de surcharger le serveur lors de la création du document.
+                  <strong>1. Le rendu du PDF :</strong> La mise en page sautait souvent lors de la création du document A4.<br>
+                  <em>Solution :</em> J'ai créé un fichier de style (CSS) spécifique pour l'impression afin de bloquer le format.
+                  <br><br>
+                  <strong>2. Le calcul automatique :</strong> Il fallait que le total change dès qu'on tape un chiffre sans recharger la page.<br>
+                  <em>Solution :</em> Utilisation de <strong>JavaScript</strong> pour mettre à jour l'affichage instantanément.
+                  <br><br>
+                  <strong>3. La mise en ligne :</strong> Configurer la base de données à distance sur <strong>Railway</strong> était nouveau pour moi.<br>
+                  <em>Solution :</em> Paramétrage des "Variables d'environnement" pour sécuriser et réussir la connexion Cloud.
               </p>
 
-              <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 40px;">
-                 📸 Démonstration & Code Source
-              </h3>
-              
-              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
-                  
-                  <p style="color: #ccc; margin-bottom: 25px;">
-                      Retrouvez ci-dessous le manuel d'utilisation de l'application (avec les captures d'écran de l'interface), ainsi que le code source complet du projet.
-                  </p>
-                  
-                  <a href="../DEVIS APP.pdf" target="_blank" class="btn-project" style="background: #e74c3c; color: white; border: none; margin: 10px; display: inline-block;">
-                      📄 Voir le Guide (PDF)
-                  </a>
-                  
-                  <a href="https://github.com/Maxence71m/devis-app" target="_blank" class="btn-project" style="background: #333; color: white; border: none; margin: 10px; display: inline-block;">
-                      💻 Voir le code sur GitHub
-                  </a>
-                  
-              </div>
+           <h3 style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 40px;">
+   📸 Démonstration & Code Source
+</h3>
+
+<div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
+    
+    <p style="color: #ccc; margin-bottom: 25px;">
+        Le projet a été déployé et testé en production sur <strong>Railway</strong>. <br>
+        Vous pouvez consulter le guide d'utilisation complet ou explorer le code source sur GitHub.
+    </p>
+    
+    <a href="../DEVIS APP.pdf" target="_blank" class="btn-project" style="background: #e74c3c; color: white; border: none; margin: 10px; display: inline-block; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+        📄 Voir le Guide (PDF)
+    </a>
+    
+    <a href="https://github.com/Maxence71m/devis-app" target="_blank" class="btn-project" style="background: #333; color: white; border: none; margin: 10px; display: inline-block; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+        💻 Voir le code sur GitHub
+    </a>
+    
+</div>
 
           </div>
 
